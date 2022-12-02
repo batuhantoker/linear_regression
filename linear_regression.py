@@ -4,8 +4,6 @@ import numpy as np
 X = np.load('data.npy')
 y = np.load('labels.npy')
 
-# Add a column of ones to the data
-X = np.concatenate([np.ones((X.shape[0], 1)), X], axis=1)
 
 # Initialize the model parameters
 beta = np.zeros(X.shape[1])
